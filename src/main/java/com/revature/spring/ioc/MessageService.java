@@ -2,7 +2,15 @@ package com.revature.spring.ioc;
 public class MessageService {
     private String message;
 
-    public MessageService(String message) {
+    // no-arg constructor for setter injection
+    public MessageService() {
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
         this.message = message;
     }
 
